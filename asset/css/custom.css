@@ -1,0 +1,55 @@
+.wrap{
+}
+.icon-menu {
+   position: relative;
+   top:10px;
+}
+.icon-menu-hr a{width:20%;background-color:#555 ;padding:12px 0;color:#fff;font-size: 36px;display: inline-block;float: left;text-align:center; transition: all 0.3s ease;}
+.icon-menu-hr .active{
+    background-color:#4caf50 ;
+}
+.icon-menu-hr a:hover{
+    background-color:#000 ;
+}
+.icon-menu-vr {
+	width: 90px;
+	background-color: #555;
+	margin-top: 100px;
+}
+ .icon-menu-vr a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+ .icon-menu-vr .active{
+     background-color:#4caf50 ;
+ }
+ .icon-menu-vr a:hover{
+     background-color:#000 ;
+ }
+ .tabs {
+	background-color: #f1f1f1;
+    padding: 0;
+    min-height: 300px
+}
+.tabs button {
+	display: block;
+	border: navajowhite;
+	padding: 12px 0;
+	background: #f1f1f1;
+	width: 100%;
+	font-size: 18px;
+}
+.tabs button:hover,.tabs button.active{background-color: #ccc;}
+.tabcontent{
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    border-left: none;
+    height: 300px;
+    display: none;
+    background-color: #ccc;
+}

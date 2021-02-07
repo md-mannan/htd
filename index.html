@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo</title>
+
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/custom.css">
+</head>
+<body>
+<div class="container-fluid m-2 wrap">
+
+
+
+
+<!-- ++++++++++++++++++++++++++++++++ -->
+
+
+
+<div class="row">
+    <div class="col-3 col-md-6 col-sm-12">
+        <!-- horigontal menu icon -->
+            <div class="icon-menu-hr">
+                <a class="active" href=""><i class="fa fa-home"></i></a>
+                <a href=""><i class="fa fa-search"></i></a>
+                <a href=""><i class="fa fa-envelope"></i></a>
+                <a href=""><i class="fa fa-globe"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+            </div>
+
+             <!-- Vartical menu icon -->
+            <div class="icon-menu-vr">
+                <a class="active" href=""><i class="fa fa-home"></i></a>
+                <a href=""><i class="fa fa-search"></i></a>
+                <a href=""><i class="fa fa-envelope"></i></a>
+                <a href=""><i class="fa fa-globe"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+            </div>
+        
+    </div>
+
+
+    <div class="col-3 col-md-6 col-sm-12">
+        <div class="container">
+            <div class="row border-secondary">
+                <div class="col-4 tabs">
+                    <button class="tablinks" onclick="openCity(event,'London')">London</button>
+                    <button class="tablinks" onclick="openCity(event,'Paris')">Paris</button>
+                    <button class="tablinks" onclick="openCity(event,'Tokyo')">Tokyo</button>
+                </div>
+                <div id="London" class="col-8 tabcontent">
+                    <h1>London</h1>
+                    <p>London Is a capital city of england</p>
+                </div>
+
+                <div id="Paris" class="col-8 tabcontent">
+                    <h1>Paris</h1>
+                    <p>Paris Is a capital city of France</p>
+                </div>
+
+                <div id="Tokyo" class="col-8 tabcontent">
+                    <h1>Tokyo</h1>
+                    <p>Tokyo Is a capital city of Japan</p>
+                </div>
+            </div>
+               
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--+++++++++++++++++++++++++++ -->
+
+
+
+
+<script>
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+</script>
+
+
+
+</div>
+
+
+<script src="asset/js/bootstrap.bundle.js"></script>
+</body>
+</html>
